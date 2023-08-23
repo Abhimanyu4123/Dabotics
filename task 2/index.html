@@ -1,0 +1,51 @@
+
+<link href="style.css" rel="stylesheet">
+    <section class="container">
+        <form action="#" name="calculator">
+            <input type="text" id="scr" placeholder="0" name="screen" disabled>
+            <hr>
+
+            <div class="onOffBtn">
+                <input type="button" value="OFF" class="offBtn" onclick="s_off()">
+                <input type="button" value="ON" class="onBtn" onclick="s_on()">
+            </div>
+
+            <div class="numOpeBtn">
+                <input type="button" value="C" class="clear button" onclick="calculator.screen.value = '' ">
+                <input type="button" value="CE" class="clear button" onclick="calculator.screen.value = calculator.screen.value.slice(0, -1)">
+                <input type="button" value="x!" class="blueBtn ope button" onclick="factorial()">
+                <input type="button" value="&plusmn;" class="blueBtn ope button" onclick="negate()">
+
+                <input type="button" value="cos" class="blueBtn ope button" onclick="calculator.screen.value = Math.cos(calculator.screen.value,)">
+                <input type="button" value="tan" class="blueBtn ope button" onclick="calculator.screen.value =Math.tan(calculator.screen.value)">
+                <input type="button" value="sin" class="blueBtn ope button" onclick="calculator.screen.value = Math.sin(calculator.screen.value)">
+                <input type="button" value="%" class="ope button" onclick="percentage()">
+
+                <input type="button" value="7" class="button" onclick="calculator.screen.value += '7' ">
+                <input type="button" value="8" class="button" onclick="calculator.screen.value +='8' ">
+                <input type="button" value="9" class="button" onclick="calculator.screen.value += '9' ">
+                <input type="button" value="&divide;" class=" ope button" onclick="calculator.screen.value += '/' ">
+
+                <input type="button" value="4" class="button" onclick="calculator.screen.value += '4' ">
+                <input type="button" value="5" class="button" onclick="calculator.screen.value += '5' ">
+                <input type="button" value="6" class="button" onclick="calculator.screen.value += '6' ">
+                <input type="button" value="&times;" class=" ope button" onclick="calculator.screen.value += '*' ">
+
+                <input type="button" value="1" class="button" onclick="calculator.screen.value += '1' ">
+                <input type="button" value="2" class="button" onclick="calculator.screen.value += '2' ">
+                <input type="button" value="3" class="button" onclick="calculator.screen.value += '3' ">
+                <input type="button" value="&ndash;" class=" ope button" onclick="calculator.screen.value += '-' ">
+
+                <input type="button" value="." class="button" onclick="calculator.screen.value += '.' ">
+                <input type="button" value="0" class="button" onclick="calculator.screen.value += '0' ">
+                <input type="button" value="00" class="button" onclick="calculator.screen.value += '00' ">
+                <input type="button" value="+" class=" ope button" onclick="calculator.screen.value += '+' ">
+
+                <input type="button" value="(" class="blueBtn button" onclick="calculator.screen.value += '(' ">
+                <input type="button" value=")" class="blueBtn button" onclick="calculator.screen.value += ')' ">
+                <input type="button" value="&radic;" class=" ope button" onclick="calculator.screen.value = Math.sqrt(calculator.screen.value)">
+                <input type="button" value="=" class="ope button" onclick="equal()">
+            </div>
+        </form>
+        <script src="script.js"></script>
+    </section>
