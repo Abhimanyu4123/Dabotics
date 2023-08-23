@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form{
+    width: 350px;
+    padding: 30px 15px 15px 15px;
+    box-shadow: 0 2px 5px 2px rgba(17, 15, 15, 0.6);
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]{
+    font-family: 'Orbitron', sans-serif;
+    width: 100%;
+    font-size: 36px;
+    padding: 5px;
+    height: 70px;
+    background-color: rgb(241, 241, 241);
+    text-overflow: ellipsis;
+    text-align: right;
+}
+
+hr{
+    margin: 15px 0;
+    background-color: silver;
+}
+
+form .onOffBtn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form .onOffBtn input{
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10%;
+    background-color: rgb(157, 204, 68);
+    box-shadow: 2px 2px 8px rgb(205, 146, 146),
+                inset -2px -2px 6px black;
+    cursor: pointer;
+    color: #fff;
+}
+
+form .onOffBtn .onBtn{
+    background-color: #b0d347;
+}
+
+form .onOffBtn .offBtn:active{
+    font-size: 13px;
+}
+
+.onOffBtn .onBtn:active,
+.onOffBtn .offBtn:active{
+    box-shadow: inset 2px 2px 8px rgb(99, 44, 201),
+                inset -2px -2px 6px rgb(88, 106, 223);
+}
+
+
+form .numOpeBtn{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+form .numOpeBtn input{
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form .numOpeBtn input:hover{
+    color: rgb(105, 62, 246);
+}
+
+form .numOpeBtn .ope{
+    background-color: rgba(10, 41, 10, 0.925);
+}
+
+form .numOpeBtn .clear{
+    background-color: #0a368e;
+}
+
+form .numOpeBtn .blueBtn{
+    background-color:  #01012e;
+}
